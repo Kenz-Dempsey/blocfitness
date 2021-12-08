@@ -7,7 +7,7 @@
  */
 :root {
   --animate-duration: 1s;
-  --animate-delay: 1s;
+  --animate-delay: 3s;
   --animate-repeat: 1;
 }
 .animate__animated {
@@ -3915,6 +3915,7 @@
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
     visibility: visible;
+    --animate-delay: 3s;
   }
 
   to {
@@ -3927,6 +3928,7 @@
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
     visibility: visible;
+    --animate-delay: 3s;
   }
 
   to {
@@ -3937,6 +3939,7 @@
 .animate__slideInRight {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
+  --animate-delay: 3s;
 }
 @-webkit-keyframes slideInUp {
   from {
