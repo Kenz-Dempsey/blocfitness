@@ -9,6 +9,13 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Bloc Fitness - Coaching | Fitness | Success</title>
+        <!-- js animations -->
+        <link rel="stylesheet" href="css/animate.css">
+
+        <script src="js/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
     <!-- Bootstrap icons-->
@@ -17,6 +24,7 @@
       rel="stylesheet"
       type="text/css"
     />
+
     <!-- Google fonts-->
     <link
       href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
@@ -53,7 +61,7 @@
             <div class="text-center text-white">
               <!-- Page heading-->
               <img
-                class="logo"
+                class="logo animate__animated animate__fadeInDown"
                 src="./assets/img/bloc-fitness-logo.png"
                 alt=""
               />
@@ -71,12 +79,12 @@
                 id="contactForm"
                 data-sb-form-api-token="API_TOKEN"
               >
-                <div class="cta-text">
+                <div class="cta-text animate__animated animate__fadeInDown">
                   <h2>Ready to make a change?</h2>
                 </div>
                 <a target="”_blank”" href="https://calendly.com/blocfitness">
                   <button
-                    class=" cta-text btn btn-primary btn-lg"
+                    class=" cta-text btn btn-primary btn-lg animate__animated animate__fadeInDown"
                     id="submitButton"
                     type="button"
                   >
@@ -152,7 +160,7 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
+              <div class="features-icons-icon d-flex animate__animated animate__bounce">
                 <i class="bi bi-calendar-week m-auto text-primary"></i>
               </div>
               <h3>Flexible Hours</h3>
