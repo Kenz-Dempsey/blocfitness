@@ -1,25 +1,35 @@
-import "animate.css";
 $(window).on("load", function () {
-  $(window)
-    .scroll(function () {
-      var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-      $(".fade").each(function () {
-        /* Check the location of each desired element */
-        var objectBottom = $(this).offset().top + $(this).outerHeight();
+  function fade() {
+    var animation_height = $(window).innerHeight() * 0.25;
+    var ratio = Math.round((1 / animation_height) * 10000) / 10000;
 
-        /* If the element is completely within bounds of the window, fade it in */
-        if (objectBottom < windowBottom) {
-          //object comes into view (scrolling down)
-          if ($(this).css("opacity") == 0) {
-            $(this).fadeTo(500, 1);
-          }
+    $(".fade").each(function () {
+      var objectTop = $(this).offset().top;
+      var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+      if (objectTop < windowBottom) {
+        if (objectTop < windowBottom - animation_height) {
+          $(this).html("fully visible");
+          $(this).css({
+            transition: "opacity 0.1s linear",
+            opacity: 1,
+          });
         } else {
-          //object goes out of view (scrolling up)
-          if ($(this).css("opacity") == 1) {
-            $(this).fadeTo(500, 0);
-          }
+          $(this).html("fading in/out");
+          $(this).css({
+            transition: "opacity 0.25s linear",
+            opacity: (windowBottom - objectTop) * ratio,
+          });
         }
-      });
-    })
-    .scroll(); //invoke scroll-handler on page-load
+      } else {
+        $(this).html("not visible");
+        $(this).css("opacity", 0);
+      }
+    });
+  }
+  $(".fade").css("opacity", 0);
+  fade();
+  $(window).scroll(function () {
+    fade();
+  });
 });
