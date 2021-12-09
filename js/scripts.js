@@ -17,7 +17,7 @@ $(window).on("load", function () {
         } else {
           $(this).html("fading in/out");
           $(this).css({
-            transition: "opacity 0.25s linear",
+            transition: "opacity 1s linear",
             opacity: (windowBottom - objectTop) * ratio,
           });
         }

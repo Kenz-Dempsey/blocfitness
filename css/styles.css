@@ -110,11 +110,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
-  box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
-  -webkit-transition: width 0.25s ease;
-  transition: width 0.25s ease;
+  -webkit-box-shadow: 0 0 20px 0 rgb(0 0 0 / 25%);
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 25%);
 }
+
+.btn__book-overlay-trigger:hover {
+  background-color: rgb(209, 209, 209);
+  transition: 0.32s;
+}
+
+/* .story {
+  /* display: flex; */
+/* text-align: left; */
+/* padding-left: 27%; */
 
 .fade {
   margin: 50px;
@@ -4249,6 +4257,7 @@ fieldset:disabled .btn {
 
 .nav {
   display: flex;
+  position: fixed;
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
@@ -11701,7 +11710,7 @@ fieldset:disabled .btn {
   }
 }
 .features-icons {
-  padding-top: 7rem;
+  padding-top: 5rem;
   padding-bottom: 7rem;
 }
 .features-icons .features-icons-item {

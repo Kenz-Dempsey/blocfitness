@@ -3915,7 +3915,7 @@
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
     visibility: visible;
-    --animate-delay: 3s;
+    --animate-delay: 6s;
   }
 
   to {
@@ -3928,7 +3928,7 @@
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
     visibility: visible;
-    --animate-delay: 3s;
+    --animate-delay: 6s;
   }
 
   to {
@@ -3939,7 +3939,7 @@
 .animate__slideInRight {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
-  --animate-delay: 3s;
+  --animate-delay: 6s;
 }
 @-webkit-keyframes slideInUp {
   from {
