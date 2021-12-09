@@ -119,6 +119,10 @@ body {
   transition: 0.32s;
 }
 
+.changectafont {
+  font-weight: 999;
+}
+
 /* .story {
   /* display: flex; */
 /* text-align: left; */
