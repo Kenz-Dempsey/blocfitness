@@ -10,6 +10,10 @@
   --animate-delay: 3s;
   --animate-repeat: 1;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 .animate__animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
